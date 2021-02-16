@@ -43,7 +43,7 @@ struct OutputParameters {
 
   /// Constructor from configuration
   explicit OutputParameters(Configuration&& conf) : OutputParameters() {
-    logg[LExperiment].trace(source_location);
+    logg[LExperiment].trace(smash_source_location);
 
     if (conf.has_value({"Thermodynamics"})) {
       auto subcon = conf["Thermodynamics"];

@@ -127,10 +127,10 @@ void setup_default_float_traps() {
           msg = "unknown";
           break;
       }
-      logg[LFpe].fatal(source_location,
+      logg[LFpe].fatal(smash_source_location,
                        "Floating point trap was raised: ", msg);
     } else {
-      logg[LFpe].fatal(source_location, "Unexpected Signal ", signal,
+      logg[LFpe].fatal(smash_source_location, "Unexpected Signal ", signal,
                        " received in the FPE signal handler. Aborting.");
     }
     std::abort();

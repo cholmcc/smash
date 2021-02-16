@@ -240,7 +240,7 @@ void create_all_loggers(Configuration config);
  * Hackery that is required to output the location in the source code where the
  * log statement occurs.
  */
-#define source_location \
+#define smash_source_location \
   __FILE__ ":" + std::to_string(__LINE__) + " (" + __func__ + ')'
 
 /**

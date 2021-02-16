@@ -389,7 +389,7 @@ class Action {
       }
     }
     /* Should never get here. */
-    logg[LAction].fatal(source_location,
+    logg[LAction].fatal(smash_source_location,
                         "Problem in choose_channel: ", subprocesses.size(), " ",
                         weight_sum, " ", total_weight, " ",
                         //          random_weight, "\n", *this);
